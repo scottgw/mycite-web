@@ -1,0 +1,10 @@
+<h1>MyCite</h1>
+<p>
+  MyCite is a webcite that stores references to computer science papers
+  and articles, and allows users to review and comment on them.
+<p>
+  You have various options:
+  <ul>
+    <li><a href=@{AddRefR}>Add a new reference
+    <li><a href=@{PubsR}>View references
+    <li><a href=@{EditDetailsR}>Edit your personal details

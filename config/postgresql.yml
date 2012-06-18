@@ -1,0 +1,24 @@
+Default: &defaults
+  user: mycite_pguser
+  password: mycite_pguser
+  host: localhost
+  port: 5432
+  database: mycite
+  poolsize: 10
+
+Development:
+  <<: *defaults
+
+Testing:
+  database: mycite-web_test
+  <<: *defaults
+
+Staging:
+  database: mycite-web_staging
+  poolsize: 100
+  <<: *defaults
+
+Production:
+  database: mycite-web_production
+  poolsize: 100
+  <<: *defaults
