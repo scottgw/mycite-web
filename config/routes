@@ -16,3 +16,5 @@
 
 /add_review/#PubId AddReviewR GET POST
 /edit_review/#ReviewId EditReviewR GET POST
+
+/user/#UserId UserR GET

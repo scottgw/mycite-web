@@ -58,6 +58,7 @@ Pub
 
 Review
   refer PubKey
+  user UserId
   rating Rating
   text Text
 |]

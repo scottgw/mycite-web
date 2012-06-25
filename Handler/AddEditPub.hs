@@ -15,8 +15,6 @@ import Import
 
 instance YesodJquery App
 
-instance MonadDB (GHandler App App)
-
 editRefForm :: Maybe Pub -> [Text] -> Form Pub
 editRefForm pubMb authorNames = renderDivs $
     Pub <$> areq textField "Title" (pull pubTitle)

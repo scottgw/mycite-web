@@ -23,6 +23,7 @@ import Handler.Home
 import Handler.AddEditPub
 import Handler.AddEditReview
 import Handler.Authors
+import Handler.User
 
 -- This line actually creates our YesodSite instance. It is the second half
 -- of the call to mkYesodData which occurs in Foundation.hs. Please see

@@ -1,3 +1,5 @@
+{-# LANGUAGE FlexibleInstances #-}
+
 module Foundation
     ( App (..)
     , Route (..)
@@ -34,6 +36,7 @@ import Web.ClientSession (getKey)
 import Text.Hamlet (hamletFile)
 
 import MyCite.Model.Definition
+import MyCite.Model.Util
 
 -- | The site argument for your application. This can be a good place to
 -- keep settings and values requiring initialization before your application
@@ -47,6 +50,9 @@ data App = App
     , httpManager :: Manager
     , persistConfig :: Settings.PersistConfig
     }
+
+-- Add an instance of a MonadDB for the MyCite.Model.Util functions.
+instance MonadDB (GHandler App App)
 
 -- Set up i18n messages. See the message folder.
 mkMessage "App" "messages" "en"
