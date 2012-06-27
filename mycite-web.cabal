@@ -32,6 +32,8 @@ library
                      Handler.AddEditPub
                      Handler.AddEditReview
                      Handler.Authors
+                     Handler.User
+                     Handler.Util
                      MyCite.Model.Definition
                      MyCite.Model.Util
 --                     MyCite.Model.Bibtex
